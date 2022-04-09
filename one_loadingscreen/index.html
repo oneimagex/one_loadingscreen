@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
-<body oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
+<body>
     <div class="video-background">
         <iframe class="videoContainer__video" height="150%" width="150%" src="" frameborder="0"></iframe>
    </div>
@@ -35,15 +35,6 @@
     <div class="balken-right-top" unselectable="on">
     <img src="img/right-top.png" style="opacity: 0.6;">
     </div>
-
-    <!--  Audio-html/css  -->
-    <!-- Only needed if you dont want to use the Music Player -->
-    <!-- <div class="songname">
-        <marquee scrollamount="5">Babymoench - Allein (slowed + reverbed + 8D) - Press SPACE to mute/play</marquee>
-    </div>
-    <div class="songimg">
-        <img src="img/allein.png">
-    </div> -->
 
     <!-- Uhr/Clock -->
 
@@ -122,7 +113,7 @@
         </div>
       </div>
 
-      <audio src="music/Allein-Babymoench.mp3" id="audio"></audio>
+      <audio src="music/Allein-Babymoench.ogg" id="audio"></audio>
 
       <div class="img-container">
         <img src="images/Allein-Babymoench.jpg" alt="music-cover" id="cover" />
@@ -139,31 +130,6 @@
         </button>
       </div>
     </div>
-
-    <!--  Audio-js  -->
-    <!-- Only needed if you dont want to use the Music Player -->
-    <!-- <script>
-        var play = false;
-        var audio = new Audio('audio.mp3');
-        audio.volume = 0.1;
-        audio.play();
-
-        function onKeyDown(event) {
-            switch (event.keyCode) {
-                case 32: //SpaceBar                    
-                    if (play) {
-                        audio.pause();
-                        play = false;
-                    } else {
-                        audio.play();
-                        play = true;
-                    }
-                    break;
-            }
-            return false;
-        }
-        window.addEventListener("keydown", onKeyDown, false);
-    </script> -->
 
     <script src="script.js"></script>
     <script src="time.js" type="text/javascript"></script>
